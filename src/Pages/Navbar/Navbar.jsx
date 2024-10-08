@@ -145,7 +145,7 @@ const Navbar = () => {
           <ul
             className={`${
               isOpen ? "left-0" : "-left-96"
-            } top-0 duration-300 ease-out flex flex-col xl:flex xl:flex-row gap-7 bg-white xl:bg-inherit w-4/5 md:w-96 xl:w-auto h-screen xl:h-auto absolute z-40 xl:static py-12 px-8 xl:p-0 border xl:border-0`}
+            } top-0 duration-300 ease-out flex flex-col xl:flex xl:flex-row gap-7 bg-white xl:bg-inherit w-64 md:w-96 xl:w-auto h-screen xl:h-auto absolute z-40 xl:static py-12 px-8 xl:p-0 border xl:border-0`}
           >
             {menuItems1}
             <li
