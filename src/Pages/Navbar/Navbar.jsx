@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Drawer from "../Drawer/Drawer";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,9 @@ const Navbar = () => {
   const menuItems2 = (
     <>
       <li className="hover:text-[#F05A66] hidden md:block font-bold text-sm">
-        <Link to="">YOUR ACCOUNT</Link>
+        <label htmlFor="my-drawer-4" className="text-sm">
+          YOUR ACCOUNT
+        </label>
       </li>
       <li className="hover:text-[#F05A66]">
         <button>
@@ -87,7 +90,7 @@ const Navbar = () => {
             </span>
           </div>
 
-          <span class="font-bold text-sm">
+          <span className="font-bold text-sm">
             $<span>0.00</span>
           </span>
         </button>
@@ -176,6 +179,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="xl:hidden fixed top-0 left-0 min-h-screen w-screen bg-black  opacity-25"></div>
       )}
+      <Drawer />
     </>
   );
 };
